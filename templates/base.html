@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+
+    {% comment %} {% load static %} {% endcomment %}
+    <link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}">
+
+    <link rel="stylesheet" href="{% static '/js/bootstrap.min.js/' %}">
+    <link rel="stylesheet" href="{% static 'js/jquery-3.2.1.slim.min.js' %}">
+    <link rel="stylesheet" href="{% static 'js/popper.min.js' %}">
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-dark bg-dark">
+    <a href="" class="navbar-brand">To Do App</a>
+</nav>
+
+<div class="container">
+    {% block content %} {% endblock %}
+</div>
+
+
+
+</body>
+</html>
